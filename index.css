@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}	
+
+body, button, input {
+    font-family: 'Righteous', cursive;
+}
+
+.container {
+    max-width: 800%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.crud_title {
+    text-align: center;
+}
+
+.crud_form {
+    display: flex;
+    margin: 10px 0;
+}
+
+.form_input {
+    flex: 1;
+    margin-right: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+
+.button-primary {
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+}
+
+.crud_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table_header, .table_body {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.table_header{
+    background-color: #f0f0f0;
+}
