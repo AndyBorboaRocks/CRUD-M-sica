@@ -76,7 +76,7 @@ function editData(index) {
     renderTable();
 }
 
-function deletetData(index) {
+function deleteData(index) {
     data.splice(index, 1);
     saveDataToLocalStorage();
     renderTable();
