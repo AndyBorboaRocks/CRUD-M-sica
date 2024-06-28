@@ -68,7 +68,7 @@ function renderTable() {
 
 function editData(index) {
     const item = data[index];
-    artistaInput.value = item.Artista;
+    nameInput.value = item.Artista;
     discoInput.value = item.Disco;
     fechaInput.value = item.Fecha;
     data.splice(index, 1);
