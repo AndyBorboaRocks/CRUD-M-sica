@@ -50,8 +50,8 @@ function renderTable() {
             editData(index);
         })
 
-        deletetButton.addEventListener('click', function () {
-            deletetData(index);
+        deleteButton.addEventListener('click', function () {
+            deleteData(index);
         })
 
         actionCell.appendChild(editButton);
