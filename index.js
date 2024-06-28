@@ -43,6 +43,17 @@ function renderTable() {
         editButton.textContent = 'Editar';
         deleteButton.textContent = 'Eliminar';
 
+        editButton.classList.add('button, button-Secondary');
+        deleteButton.classList.add('button, button-Terciary');
+
+        editButton.addEventListener('click', function () {
+            editData(index);
+        })
+
+        deleteButton.addEventListener('click', function () {
+            deleteData(index);
+        })
+
         actionCell.appendChild(editButton);
         actionCell.appendChild(deleteButton);
 
