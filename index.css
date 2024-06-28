@@ -48,17 +48,32 @@ body, button, input {
     background-color: #444;
     color: #fff;
 }
+.button-Secondary {
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+}
+.button-Tertiary {
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+}
 
 .crud_table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.table_header, .table_body {
+.table_header, .table_body td{
     border: 1px solid #ccc;
     padding: 8px;
 }
 
 .table_header{
     background-color: #f0f0f0;
+}
+
+.table_body td:nth-child(3) {
+    display: flex;
+    justify-content: space-around;
 }

@@ -17,6 +17,8 @@ form.addEventListener('submit', function (event) {
         saveDataToLocalStorage();
         renderTable();
         form.reset();
+    }else{
+        alert('Por favor ingrese todos los datos')
     }    
 })
 
@@ -41,6 +43,17 @@ function renderTable() {
         editButton.textContent = 'Editar';
         deleteButton.textContent = 'Eliminar';
 
+        editButton.classList.add("button, button-Secondary");
+        editButton.classList.add("button, button-Terciary");
+
+        editButton.addEventListener('click', function () {
+            editData(index);
+        })
+
+        deletetButton.addEventListener('click', function () {
+            deletetData(index);
+        })
+
         actionCell.appendChild(editButton);
         actionCell.appendChild(deleteButton);
 
@@ -51,6 +64,22 @@ function renderTable() {
 
         tableBody.appendChild(row);
 })
+}
+
+function editData(index) {
+    const item = data[index];
+    nameInput.value = item.Artista;
+    discoInput.value = item.Disco;
+    fechaInput.value = item.Fecha;
+    data.splice(index, 1);
+    saveDataToLocalStorage();
+    renderTable();
+}
+
+function deletetData(index) {
+    data.splice(index, 1);
+    saveDataToLocalStorage();
+    renderTable();
 }
 
 renderTable();
