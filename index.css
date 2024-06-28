@@ -48,12 +48,12 @@ body, button, input {
     background-color: #444;
     color: #fff;
 }
-.button-Secondary {
+.button--Secondary {
     cursor: pointer;
     background-color: #444;
     color: #fff;
 }
-.button-Terciary {
+.button--Terciary {
     cursor: pointer;
     background-color: #444;
     color: #fff;
